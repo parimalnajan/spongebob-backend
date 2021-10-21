@@ -20,4 +20,4 @@ app.get('/', (req, res) => res.send('Hello World!'))
 app.get('/p', (req, res) => res.send('Products!'))
 
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(process.env.PORT || port, () => console.log(`Example app listening on port ${port}!`))
