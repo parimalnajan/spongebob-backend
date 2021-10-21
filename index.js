@@ -18,6 +18,7 @@ app.get('/products', (req,res)=>{
 })
 app.get('/', (req, res) => res.send('Hello World!'))
 app.get('/p', (req, res) => res.send('Products!'))
-
+app.get(`/spongebob/${str}`, function(req,res){
+  res.json({translation:`${str} is the result`})
 
 app.listen(process.env.PORT || port, () => console.log(`Example app listening on port ${port}!`))
