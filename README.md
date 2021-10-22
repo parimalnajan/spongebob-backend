@@ -10,5 +10,15 @@ Node/Express
 #### Backend Hosted Link: https://spongebro2.herokuapp.com/
 
 ### API Usage
-Verb: GET
-URL: https://spongebro2.herokuapp.com/t/
+#### Verb: GET
+#### type: string
+#### URL: https://spongebro2.herokuapp.com/t/
+
+#### input example: /t/ipsum lorem
+#### output: Json Object with the converted text
+#### example output
+```
+{
+ result: "iPsuM LoReM"
+}
+```
