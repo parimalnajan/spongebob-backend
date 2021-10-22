@@ -14,7 +14,8 @@ Node/Express
 #### type: string
 #### URL: https://spongebro2.herokuapp.com/t/
 
-#### input example: /t/ipsum lorem
+#### example input
+```/t/ipsum lorem```
 #### output: Json Object with the converted text
 #### example output
 ```
