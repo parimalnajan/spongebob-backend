@@ -5,6 +5,15 @@ const e = require('express')
 const app = express()
 const port = 3000
 
+app.use((req,res,next) =>{
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Acesss-Control-Allow-Headers','*');
+  if(req.method==='OPTIONS'){
+    res.header("Access-Control-Allow-Methods", 'PUT,POST,PATCH,DELETE,GET');
+    return res.status(200).json({})
+  }
+  next();
+})
 app.get('/products', (req,res)=>{
   const productPage = `
   <h1>Products Page</h1>
@@ -62,7 +71,8 @@ app.get('/t/:str', function(req,res){
 
      return reprocessed;
   };
-   res.json({result: translate(req.params.str)})
+  const string=req.params.str.toLowerCase()
+   res.json({result: translate(req.params.string)})
 
 })
 app.listen(process.env.PORT || port, () => console.log(`Example app listening on port ${port}!`))
