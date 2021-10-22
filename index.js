@@ -72,7 +72,7 @@ app.get('/t/:str', function(req,res){
      return reprocessed;
   };
   const string=req.params.str.toLowerCase()
-   res.json({result: translate(req.params.string)})
+   res.json({result: translate(string)})
 
 })
 app.listen(process.env.PORT || port, () => console.log(`Example app listening on port ${port}!`))
