@@ -1,13 +1,9 @@
 ### spongebob-frontend
-### FullStack Translaor App
-#### Frontend:
-
-Static HTML and JS
-#### Frontend Reopo: https://github.com/parimalnajan/spongebob-frontend
-
-#### Backend
-Node/Express
-#### Backend Hosted Link: https://spongebro2.herokuapp.com/
+### FullStack Translation App
+Translator API hosted on heroku, using NodeJs
+#### Backend Link: https://spongebro2.herokuapp.com/
+#### Live Project : https://mocking-spongebob.netlify.app/
+#### Frontend Repo: https://github.com/parimalnajan/spongebob-frontend
 
 ### API Usage
 #### Verb: GET
@@ -23,3 +19,5 @@ Node/Express
  result: "iPsuM LoReM"
 }
 ```
+
+
