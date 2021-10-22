@@ -16,7 +16,7 @@ Translator API hosted on heroku, using NodeJs
 #### example output
 ```
 {
- result: "iPsuM LoReM"
+ "result": "iPsuM LoReM"
 }
 ```
 
